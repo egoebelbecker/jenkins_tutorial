@@ -27,6 +27,7 @@ pipeline {
             steps {
                 echo 'Executing unit and static analysis test suites...'
                 // Example: sh 'npm test' or './mvnw test'
+		error("A test failed!")
                 sh 'echo "Running test suite... All 42 tests passed."'
             }
         }
